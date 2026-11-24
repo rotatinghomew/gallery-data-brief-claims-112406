@@ -1,0 +1,4 @@
+fix,elig_id,received,verified,low_delta,reason
+FIX1,H10-6,10,0,-3,覆盖窗更正
+FIX2,H11-6,10,1,2,收到回执
+FIX3,H02-6,11,0,1,重复邀请核对

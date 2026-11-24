@@ -1,0 +1,6 @@
+receipt,artifact,venue,sent,result
+R1,W11,馆1,8,已签
+R2,W11,馆2,8,已签
+R3,M11,馆3,8,待回执
+R4,M11,馆1,8,已签
+R5,P11,馆2,9,印前确认

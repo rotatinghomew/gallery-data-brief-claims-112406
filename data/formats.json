@@ -1,0 +1,149 @@
+{
+  "tables": {
+    "zones": [
+      "zone",
+      "venue",
+      "type",
+      "edition",
+      "capacity_grade"
+    ],
+    "eligibility": [
+      "elig_id",
+      "zone",
+      "period",
+      "groups_low",
+      "groups_high",
+      "complete",
+      "received",
+      "hours_basis"
+    ],
+    "visits": [
+      "obs",
+      "elig_id",
+      "group",
+      "audience",
+      "persons",
+      "status",
+      "received"
+    ],
+    "followup": [
+      "group",
+      "elig_id",
+      "window",
+      "rating",
+      "received",
+      "result"
+    ],
+    "claims": [
+      "claim",
+      "operation",
+      "focus",
+      "scope",
+      "period",
+      "reference",
+      "numerator",
+      "denominator",
+      "measure",
+      "rounding",
+      "qualifier",
+      "threshold"
+    ],
+    "artifacts": [
+      "artifact",
+      "channel",
+      "audience",
+      "edition",
+      "state",
+      "received"
+    ],
+    "references": [
+      "artifact",
+      "claim",
+      "location",
+      "group_label"
+    ],
+    "printed_values": [
+      "artifact",
+      "claim",
+      "display_text",
+      "fact_cutoff"
+    ],
+    "corrections": [
+      "fix",
+      "elig_id",
+      "received",
+      "verified",
+      "low_delta",
+      "reason"
+    ],
+    "receipts": [
+      "receipt",
+      "artifact",
+      "venue",
+      "sent",
+      "result"
+    ]
+  },
+  "references": [
+    [
+      "zones",
+      "zone",
+      "eligibility",
+      "zone"
+    ],
+    [
+      "eligibility",
+      "elig_id",
+      "visits",
+      "elig_id"
+    ],
+    [
+      "eligibility",
+      "elig_id",
+      "followup",
+      "elig_id"
+    ],
+    [
+      "claims",
+      "claim",
+      "references",
+      "claim"
+    ],
+    [
+      "artifacts",
+      "artifact",
+      "references",
+      "artifact"
+    ],
+    [
+      "eligibility",
+      "elig_id",
+      "corrections",
+      "elig_id"
+    ],
+    [
+      "artifacts",
+      "artifact",
+      "receipts",
+      "artifact"
+    ],
+    [
+      "artifacts",
+      "artifact",
+      "printed_values",
+      "artifact"
+    ],
+    [
+      "claims",
+      "claim",
+      "printed_values",
+      "claim"
+    ]
+  ],
+  "agreement_keys": [
+    "time",
+    "definitions",
+    "editing",
+    "correction"
+  ]
+}
